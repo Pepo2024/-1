@@ -1643,8 +1643,8 @@
 
     <!-- Core Logic -->
     <script>
-        // Password System - Always require password "000"
-        const DEFAULT_PASSWORD = '000';
+        // Password System - Always require password "2216"
+        const DEFAULT_PASSWORD = '2216';
         let isAuthenticated = false;
         const REMEMBER_DURATION = 24 * 60 * 60 * 1000; // 24 ساعة
 
@@ -1715,7 +1715,7 @@
                 const modal = document.getElementById('password-prompt-modal');
                 if (modal) modal.remove();
             } else {
-                alert('كلمة المرور غير صحيحة! الكلمة الصحيحة هي: 000');
+                alert('كلمة المرور غير صحيحة! ');
                 document.getElementById('password-input').value = '';
                 document.getElementById('password-input').focus();
             }
